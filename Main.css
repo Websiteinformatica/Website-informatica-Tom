@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 15px;
+}
+p {
+	font-size: 40px;
+}
+body {
+  margin: 0;
+  background: #02c061;
+}
+td {
+  text-align: left;
+  padding-left: 50px;
+  vertical-align: top;
+}
+.afbeelding {
+  padding-left: 100px;
+  padding-right: 100px;
+  vertical-align: top;
+}
+
+/* Style the header */
+.header {
+  background-color: #02c061;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+  color: White;
+}
+/* zijkant */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: #02c061;
+}
+/* Blok met link */
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  font-family: 'Comfortaa';
+}
+
+.topnav a {
+  color: black;
+  padding: 17px;
+  padding-left: 41.4px;
+  padding-right: 41.4px;
+  text-decoration: none;
+  margin-bottom: 60px;
+  margin-top: 130px;
+  font-family: Tahoma;
+}
+.topnav a:first-child{ /* Eerste item: Paragraaf 1 */
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;}
+.topnav a:last-child {  /* Laatste item: Quiz */
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 60px/* Past de afronding alleen toe op deze items */
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #eab200;
+  color: #f2f2f2;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 15px;
+  padding-bottom: 100px;
+  background: #FFFFFF;
+  font-family: 'Comfortaa';
+  border-radius: 50px;
+  text-align: center;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  background: #02c061;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}

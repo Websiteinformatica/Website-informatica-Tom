@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 50px;
+  text-align: left;
+}
+p {
+	font-size: 20px;
+	text-align: left;
+	font-weight: 10;
+}
+body {
+  margin: 0;
+  background: #02c061;
+}
+table 
+{
+	border: 1px white; 
+	border-collapse:collapse; 
+	width:100%; 
+	height:100px;
+	font-size: 20px;
+	text-align: left;
+	font-weight: 20;
+}
+tr, td 
+{
+	border: 1px white; 
+	text-align:center; 
+	vertical-align: top;
+	font-size: 20px;
+	text-align: left;
+}
+
+/* Style the header */
+.header {
+  background-color: #02c061;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+  color: White;
+}
+/* zijkant */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: #02c061;
+}
+/* Blok met link */
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  font-family: 'Comfortaa';
+}
+
+.topnav a {
+  color: black;
+  padding: 17px;
+  padding-left: 41.4px;
+  padding-right: 41.4px;
+  text-decoration: none;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  font-family: Tahoma;
+}
+.topnav a:first-child{ /* Eerste item: Paragraaf 1 */
+	border-top-left-radius: 60px;
+	border-bottom-left-radius: 60px;}
+.topnav a:last-child {  /* Laatste item: Quiz */
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 60px/* Past de afronding alleen toe op deze items */
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #eab200;
+  color: #f2f2f2;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+  background: #FFFFFF;
+  font-family: 'Comfortaa';
+  border-radius: 50px;
+  text-align: center;
+}
+
+/* Left and right column */
+.column.side {
+  width: 10%;
+  background: #02c061;
+}
+
+/* Middle column */
+.column.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
